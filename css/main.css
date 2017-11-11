@@ -1,0 +1,111 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: yellow;
+    color: red;
+}
+
+body{
+    background-color: #02BEC4;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper
+{
+    max-width: 1024px;
+    width: 90%;
+    min-width: 300px;
+    margin: 0 auto
+}
+
+main#main-wrapper{
+    margin-top: 80px;
+    height: 600px;
+    /*overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll*/
+}
+
+nav{
+    height: 37px;
+    background-color: #02547D;
+    color: #000;
+    margin-bottom: 50px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    border-bottom: 5px solid red;
+    z-index: 1;
+}
+
+/*
+nav ul li a{
+    color: #000;
+}*/
+
+nav ul{
+    padding: 0;
+}
+
+nav a{
+    color:red;
+}
+
+nav a{
+    color: #E1F7E7;
+}
+
+nav li{
+    float: left;
+    width: 25%;
+    list-style-type: none;
+    /*padding: 7px*/
+}
+
+nav li > ul{    
+    background-color: white;
+    top: 3px;
+    color: red;
+    position: relative;
+    float: left;
+    display: none;
+}
+
+nav li > ul > li{    
+    width: 100%;
+}
+
+nav li:hover > ul
+{
+    display: block;
+}
+
+nav li a
+{
+    display: block;
+    height: 31px;
+    padding: 7px;
+}
+
+nav li a:hover
+{
+    background-color: gray;
+    color: white;
+}
+
+a#front{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+    z-index: 9;
+
+}
